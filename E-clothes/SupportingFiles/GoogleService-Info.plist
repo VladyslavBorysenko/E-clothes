@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>883445302861-mh07b9g6jjqdeqcglp88bjge8t7hfqjp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.883445302861-mh07b9g6jjqdeqcglp88bjge8t7hfqjp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAaot_8JvBdvAaObTNrFSKe-00aCCnlaU8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>883445302861</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.E-clothes</string>
+	<key>PROJECT_ID</key>
+	<string>e-clothes-3d765</string>
+	<key>STORAGE_BUCKET</key>
+	<string>e-clothes-3d765.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:883445302861:ios:11c7bb8a32122c1ae4be04</string>
+	<key>DATABASE_URL</key>
+	<string>https://e-clothes-3d765.firebaseio.com</string>
+</dict>
+</plist>

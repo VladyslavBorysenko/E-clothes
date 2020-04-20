@@ -3,35 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A3DBE17B9BB4170A1C0EA18 /* Pods_E_clothes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB67EAC6941C644701E99370 /* Pods_E_clothes.framework */; };
 		860080F82434D4960014D64C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860080F72434D4960014D64C /* AppDelegate.swift */; };
-		860080FA2434D4960014D64C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860080F92434D4960014D64C /* SceneDelegate.swift */; };
 		860080FC2434D4960014D64C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860080FB2434D4960014D64C /* ViewController.swift */; };
 		860080FF2434D4960014D64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860080FD2434D4960014D64C /* Main.storyboard */; };
 		860081012434D49B0014D64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860081002434D49B0014D64C /* Assets.xcassets */; };
 		860081042434D49B0014D64C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860081022434D49B0014D64C /* LaunchScreen.storyboard */; };
 		8600810C2434D7A70014D64C /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8600810B2434D7A70014D64C /* LoginStoryboard.storyboard */; };
+		864CF637244CE65300908266 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CF636244CE65300908266 /* SceneDelegate.swift */; };
+		864CF63B244E02DC00908266 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CF63A244E02DC00908266 /* Extension.swift */; };
+		864CF63C244E02DC00908266 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CF63A244E02DC00908266 /* Extension.swift */; };
+		8695C0B8244CBFB80016A65F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8695C0B7244CBFB80016A65F /* GoogleService-Info.plist */; };
+		8695C0BA244CC08B0016A65F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8695C0B9244CC08B0016A65F /* GoogleService-Info.plist */; };
+		8695C0BF244CC7150016A65F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8695C0BE244CC7150016A65F /* LoginViewController.swift */; };
+		8695C0C1244CC7290016A65F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8695C0C0244CC7290016A65F /* RegisterViewController.swift */; };
 		86A823F8244C8AEA00BFA74B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A823F7244C8AEA00BFA74B /* AppDelegate.swift */; };
 		86A823FA244C8AEA00BFA74B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A823F9244C8AEA00BFA74B /* SceneDelegate.swift */; };
 		86A823FC244C8AEA00BFA74B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A823FB244C8AEA00BFA74B /* ViewController.swift */; };
 		86A823FF244C8AEA00BFA74B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A823FD244C8AEA00BFA74B /* Main.storyboard */; };
 		86A82404244C8AEC00BFA74B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A82402244C8AEC00BFA74B /* LaunchScreen.storyboard */; };
 		86A8240A244C8B1000BFA74B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860081002434D49B0014D64C /* Assets.xcassets */; };
+		C8E978D779BC57581ECE3F7F /* Pods_E_clothes_Admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1637361CA956562DE4634B56 /* Pods_E_clothes_Admin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1637361CA956562DE4634B56 /* Pods_E_clothes_Admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_clothes_Admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B1FF136D56AF4FC8BE5F5A /* Pods-E-clothes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-clothes.debug.xcconfig"; path = "Target Support Files/Pods-E-clothes/Pods-E-clothes.debug.xcconfig"; sourceTree = "<group>"; };
+		7B1C3BB90547A0D1098BB96A /* Pods-E-clothes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-clothes.release.xcconfig"; path = "Target Support Files/Pods-E-clothes/Pods-E-clothes.release.xcconfig"; sourceTree = "<group>"; };
 		860080F42434D4960014D64C /* E-clothes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-clothes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		860080F72434D4960014D64C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		860080F92434D4960014D64C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		860080FB2434D4960014D64C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		860080FE2434D4960014D64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		860081002434D49B0014D64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		860081032434D49B0014D64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		860081052434D49B0014D64C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8600810B2434D7A70014D64C /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		864CF636244CE65300908266 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		864CF63A244E02DC00908266 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		8695C0B7244CBFB80016A65F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8695C0B9244CC08B0016A65F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8695C0BE244CC7150016A65F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8695C0C0244CC7290016A65F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		86A823F5244C8AEA00BFA74B /* E-clothes Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-clothes Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A823F7244C8AEA00BFA74B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A823F9244C8AEA00BFA74B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +55,9 @@
 		86A823FE244C8AEA00BFA74B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86A82403244C8AEC00BFA74B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86A82405244C8AEC00BFA74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8B781059D262C2BDA3FD795 /* Pods-E-clothes Admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-clothes Admin.release.xcconfig"; path = "Target Support Files/Pods-E-clothes Admin/Pods-E-clothes Admin.release.xcconfig"; sourceTree = "<group>"; };
+		EB67EAC6941C644701E99370 /* Pods_E_clothes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_clothes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F576B1C4E04CC2E1DCFC9D71 /* Pods-E-clothes Admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-clothes Admin.debug.xcconfig"; path = "Target Support Files/Pods-E-clothes Admin/Pods-E-clothes Admin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3DBE17B9BB4170A1C0EA18 /* Pods_E_clothes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,12 +73,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E978D779BC57581ECE3F7F /* Pods_E_clothes_Admin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E891CAF1CB05D009B97309B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60B1FF136D56AF4FC8BE5F5A /* Pods-E-clothes.debug.xcconfig */,
+				7B1C3BB90547A0D1098BB96A /* Pods-E-clothes.release.xcconfig */,
+				F576B1C4E04CC2E1DCFC9D71 /* Pods-E-clothes Admin.debug.xcconfig */,
+				B8B781059D262C2BDA3FD795 /* Pods-E-clothes Admin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2CDBBD63E8C7BAEFB5366FF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB67EAC6941C644701E99370 /* Pods_E_clothes.framework */,
+				1637361CA956562DE4634B56 /* Pods_E_clothes_Admin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		860080EB2434D4960014D64C = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +107,8 @@
 				860080F62434D4960014D64C /* E-clothes */,
 				86A823F6244C8AEA00BFA74B /* E-clothes Admin */,
 				860080F52434D4960014D64C /* Products */,
+				1E891CAF1CB05D009B97309B /* Pods */,
+				2CDBBD63E8C7BAEFB5366FF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,15 +124,58 @@
 		860080F62434D4960014D64C /* E-clothes */ = {
 			isa = PBXGroup;
 			children = (
-				860080F72434D4960014D64C /* AppDelegate.swift */,
-				860080F92434D4960014D64C /* SceneDelegate.swift */,
-				860080FB2434D4960014D64C /* ViewController.swift */,
-				860080FD2434D4960014D64C /* Main.storyboard */,
-				860081022434D49B0014D64C /* LaunchScreen.storyboard */,
 				860081052434D49B0014D64C /* Info.plist */,
-				8600810B2434D7A70014D64C /* LoginStoryboard.storyboard */,
+				8695C0C2244CCA540016A65F /* Models */,
+				8695C0BD244CC6DA0016A65F /* SupportingFiles */,
+				8695C0BC244CC6AE0016A65F /* Storyboards */,
+				8695C0BB244CC69C0016A65F /* ViewControllers */,
 			);
 			path = "E-clothes";
+			sourceTree = "<group>";
+		};
+		864CF639244E02B500908266 /* Utilize */ = {
+			isa = PBXGroup;
+			children = (
+				864CF63A244E02DC00908266 /* Extension.swift */,
+			);
+			path = Utilize;
+			sourceTree = "<group>";
+		};
+		8695C0BB244CC69C0016A65F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				860080FB2434D4960014D64C /* ViewController.swift */,
+				8695C0BE244CC7150016A65F /* LoginViewController.swift */,
+				8695C0C0244CC7290016A65F /* RegisterViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8695C0BC244CC6AE0016A65F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				860080FD2434D4960014D64C /* Main.storyboard */,
+				860081022434D49B0014D64C /* LaunchScreen.storyboard */,
+				8600810B2434D7A70014D64C /* LoginStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8695C0BD244CC6DA0016A65F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				864CF636244CE65300908266 /* SceneDelegate.swift */,
+				860080F72434D4960014D64C /* AppDelegate.swift */,
+				8695C0B7244CBFB80016A65F /* GoogleService-Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8695C0C2244CCA540016A65F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		86A823F6244C8AEA00BFA74B /* E-clothes Admin */ = {
@@ -100,6 +186,7 @@
 				86A823FB244C8AEA00BFA74B /* ViewController.swift */,
 				86A823FD244C8AEA00BFA74B /* Main.storyboard */,
 				86A82402244C8AEC00BFA74B /* LaunchScreen.storyboard */,
+				8695C0B9244CC08B0016A65F /* GoogleService-Info.plist */,
 				86A82405244C8AEC00BFA74B /* Info.plist */,
 			);
 			path = "E-clothes Admin";
@@ -108,6 +195,7 @@
 		86A82409244C8AFD00BFA74B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				864CF639244E02B500908266 /* Utilize */,
 				860081002434D49B0014D64C /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -120,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 860081082434D49B0014D64C /* Build configuration list for PBXNativeTarget "E-clothes" */;
 			buildPhases = (
+				CD1AC2B964DFADA80124D91B /* [CP] Check Pods Manifest.lock */,
 				860080F02434D4960014D64C /* Sources */,
 				860080F12434D4960014D64C /* Frameworks */,
 				860080F22434D4960014D64C /* Resources */,
+				5ECC49C53323C0CCA4AFD376 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86A82408244C8AEC00BFA74B /* Build configuration list for PBXNativeTarget "E-clothes Admin" */;
 			buildPhases = (
+				4A2F21872E740D6D69FA8C20 /* [CP] Check Pods Manifest.lock */,
 				86A823F1244C8AEA00BFA74B /* Sources */,
 				86A823F2244C8AEA00BFA74B /* Frameworks */,
 				86A823F3244C8AEA00BFA74B /* Resources */,
+				5E322E746DAA86996721EA22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +287,7 @@
 			files = (
 				860081042434D49B0014D64C /* LaunchScreen.storyboard in Resources */,
 				860081012434D49B0014D64C /* Assets.xcassets in Resources */,
+				8695C0B8244CBFB80016A65F /* GoogleService-Info.plist in Resources */,
 				860080FF2434D4960014D64C /* Main.storyboard in Resources */,
 				8600810C2434D7A70014D64C /* LoginStoryboard.storyboard in Resources */,
 			);
@@ -207,19 +300,104 @@
 				86A82404244C8AEC00BFA74B /* LaunchScreen.storyboard in Resources */,
 				86A8240A244C8B1000BFA74B /* Assets.xcassets in Resources */,
 				86A823FF244C8AEA00BFA74B /* Main.storyboard in Resources */,
+				8695C0BA244CC08B0016A65F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A2F21872E740D6D69FA8C20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E-clothes Admin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E322E746DAA86996721EA22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-clothes Admin/Pods-E-clothes Admin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-clothes Admin/Pods-E-clothes Admin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-E-clothes Admin/Pods-E-clothes Admin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ECC49C53323C0CCA4AFD376 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-clothes/Pods-E-clothes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-clothes/Pods-E-clothes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-E-clothes/Pods-E-clothes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD1AC2B964DFADA80124D91B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E-clothes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		860080F02434D4960014D64C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864CF637244CE65300908266 /* SceneDelegate.swift in Sources */,
+				8695C0BF244CC7150016A65F /* LoginViewController.swift in Sources */,
+				8695C0C1244CC7290016A65F /* RegisterViewController.swift in Sources */,
+				864CF63B244E02DC00908266 /* Extension.swift in Sources */,
 				860080FC2434D4960014D64C /* ViewController.swift in Sources */,
 				860080F82434D4960014D64C /* AppDelegate.swift in Sources */,
-				860080FA2434D4960014D64C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +408,7 @@
 				86A823FC244C8AEA00BFA74B /* ViewController.swift in Sources */,
 				86A823F8244C8AEA00BFA74B /* AppDelegate.swift in Sources */,
 				86A823FA244C8AEA00BFA74B /* SceneDelegate.swift in Sources */,
+				864CF63C244E02DC00908266 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,42 +566,47 @@
 		};
 		860081092434D49B0014D64C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B1FF136D56AF4FC8BE5F5A /* Pods-E-clothes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UYH8ZRUR9A;
 				INFOPLIST_FILE = "E-clothes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.E-clothes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		8600810A2434D49B0014D64C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B1C3BB90547A0D1098BB96A /* Pods-E-clothes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UYH8ZRUR9A;
 				INFOPLIST_FILE = "E-clothes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.E-clothes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		86A82406244C8AEC00BFA74B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F576B1C4E04CC2E1DCFC9D71 /* Pods-E-clothes Admin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +625,7 @@
 		};
 		86A82407244C8AEC00BFA74B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B781059D262C2BDA3FD795 /* Pods-E-clothes Admin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
