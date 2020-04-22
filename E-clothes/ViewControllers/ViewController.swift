@@ -24,8 +24,8 @@ class ViewController: UIViewController {
 
     //MARK: - PrivateFunctions
     private func launchLoginViewController(){
-        let launchStoryboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
-        let loginViewController = launchStoryboard.instantiateViewController(withIdentifier: "LoginNavigationController")
+        let launchStoryboard = UIStoryboard(name: StoryboardName.loginStoryboard, bundle: nil)
+        let loginViewController = launchStoryboard.instantiateViewController(withIdentifier: StoryboardID.loginNavigationID)
         loginViewController.modalPresentationStyle = .fullScreen
         present(loginViewController, animated: true, completion: nil)
         

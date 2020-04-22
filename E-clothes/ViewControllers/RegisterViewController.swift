@@ -44,11 +44,11 @@ class RegisterViewController: UIViewController {
             }
             
             if password == confirmPassword{
-                checkMarkPasswordFirst.image = UIImage(named: "green_check")
-                checkMarkPasswordSecond.image = UIImage(named: "green_check")
+                checkMarkPasswordFirst.image = UIImage(named: AppImage.greenCheckMark)
+                checkMarkPasswordSecond.image = UIImage(named: AppImage.greenCheckMark)
             } else {
-                checkMarkPasswordFirst.image = UIImage(named: "red_check")
-                checkMarkPasswordSecond.image = UIImage(named: "red_check")
+                checkMarkPasswordFirst.image = UIImage(named: AppImage.redCheckMark)
+                checkMarkPasswordSecond.image = UIImage(named: AppImage.redCheckMark)
             }
         }
         
@@ -68,6 +68,7 @@ class RegisterViewController: UIViewController {
                 debugPrint(error)
                 return
             }
+            print("Registered")
         
         }
         activityIndicator.stopAnimating()
