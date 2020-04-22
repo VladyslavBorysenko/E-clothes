@@ -50,7 +50,7 @@
                                             <color key="titleColor" red="0.85882352939999995" green="0.1215686275" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjh-Ev-4qv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjh-Ev-4qv" customClass="RoundedButton" customModule="E_clothes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="193" width="335" height="40"/>
                                         <color key="backgroundColor" red="0.11764705882352941" green="0.10980392156862745" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -64,7 +64,7 @@
                                             <action selector="logInButtonPressed:" destination="fFl-rN-KC8" eventType="touchUpInside" id="0So-Gs-sAD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkS-dz-gfE">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkS-dz-gfE" customClass="RoundedButton" customModule="E_clothes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="247" width="335" height="40"/>
                                         <color key="backgroundColor" red="0.0039215686269999999" green="0.58039215690000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -79,7 +79,7 @@
                                             <segue destination="OC8-yp-VDQ" kind="show" id="GKg-jT-vOD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaF-0j-6gU">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaF-0j-6gU" customClass="RoundedButton" customModule="E_clothes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="301" width="335" height="40"/>
                                         <color key="backgroundColor" red="0.85882352939999995" green="0.1215686275" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -175,7 +175,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbp-Al-ucD">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbp-Al-ucD" customClass="RoundedButton" customModule="E_clothes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="259" width="335" height="40"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.10980392160000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>

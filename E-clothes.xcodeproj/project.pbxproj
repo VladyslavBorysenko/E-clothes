@@ -19,6 +19,8 @@
 		864CF63C244E02DC00908266 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CF63A244E02DC00908266 /* Extension.swift */; };
 		864CF63E244E184600908266 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CF63D244E184600908266 /* Constants.swift */; };
 		864CF63F244E184600908266 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CF63D244E184600908266 /* Constants.swift */; };
+		86599B2F2450954A00E20100 /* CusomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86599B2E2450954A00E20100 /* CusomUI.swift */; };
+		86599B302450954A00E20100 /* CusomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86599B2E2450954A00E20100 /* CusomUI.swift */; };
 		8695C0B8244CBFB80016A65F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8695C0B7244CBFB80016A65F /* GoogleService-Info.plist */; };
 		8695C0BA244CC08B0016A65F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8695C0B9244CC08B0016A65F /* GoogleService-Info.plist */; };
 		8695C0BF244CC7150016A65F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8695C0BE244CC7150016A65F /* LoginViewController.swift */; };
@@ -47,6 +49,7 @@
 		864CF636244CE65300908266 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		864CF63A244E02DC00908266 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		864CF63D244E184600908266 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		86599B2E2450954A00E20100 /* CusomUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusomUI.swift; sourceTree = "<group>"; };
 		8695C0B7244CBFB80016A65F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8695C0B9244CC08B0016A65F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8695C0BE244CC7150016A65F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -139,10 +142,19 @@
 		864CF639244E02B500908266 /* Utilize */ = {
 			isa = PBXGroup;
 			children = (
+				86599B2D2450952900E20100 /* Custom */,
 				864CF63A244E02DC00908266 /* Extension.swift */,
 				864CF63D244E184600908266 /* Constants.swift */,
 			);
 			path = Utilize;
+			sourceTree = "<group>";
+		};
+		86599B2D2450952900E20100 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				86599B2E2450954A00E20100 /* CusomUI.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		8695C0BB244CC69C0016A65F /* ViewControllers */ = {
@@ -401,6 +413,7 @@
 				8695C0C1244CC7290016A65F /* RegisterViewController.swift in Sources */,
 				864CF63B244E02DC00908266 /* Extension.swift in Sources */,
 				864CF63E244E184600908266 /* Constants.swift in Sources */,
+				86599B2F2450954A00E20100 /* CusomUI.swift in Sources */,
 				860080FC2434D4960014D64C /* ViewController.swift in Sources */,
 				860080F82434D4960014D64C /* AppDelegate.swift in Sources */,
 			);
@@ -415,6 +428,7 @@
 				86A823F8244C8AEA00BFA74B /* AppDelegate.swift in Sources */,
 				86A823FA244C8AEA00BFA74B /* SceneDelegate.swift in Sources */,
 				864CF63C244E02DC00908266 /* Extension.swift in Sources */,
+				86599B302450954A00E20100 /* CusomUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
