@@ -18,7 +18,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-bg" translatesAutoresizingMaskIntoConstraints="NO" id="Mhu-h7-iEq">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7V9-3L-JbX">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7V9-3L-JbX">
                                 <rect key="frame" x="20" y="54" width="335" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vAL-Ut-48r">
@@ -60,6 +60,7 @@
                         <outlet property="activityIndicator" destination="qxV-H3-9z8" id="q6q-th-eS6"/>
                         <outlet property="authButton" destination="7gg-BR-NXl" id="inp-qH-eBy"/>
                         <outlet property="categoryCollectionView" destination="7V9-3L-JbX" id="a0S-Fx-Hzr"/>
+                        <segue destination="07G-QY-imW" kind="show" identifier="toProductController" id="yAK-RT-pXd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -71,6 +72,37 @@
                 </collectionViewFlowLayout>
             </objects>
             <point key="canvasLocation" x="1071.2" y="138.98050974512745"/>
+        </scene>
+        <!--Product View Controller-->
+        <scene sceneID="ZO9-fN-xAf">
+            <objects>
+                <viewController id="07G-QY-imW" customClass="ProductViewController" customModule="E_clothes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9J9-qr-eTX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zTQ-7F-r4b">
+                                <rect key="frame" x="20" y="44" width="335" height="623"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zTQ-7F-r4b" secondAttribute="bottom" id="Frj-MK-9jF"/>
+                            <constraint firstItem="zTQ-7F-r4b" firstAttribute="leading" secondItem="q3D-6Q-KpW" secondAttribute="leading" constant="20" id="OqZ-gf-Axn"/>
+                            <constraint firstItem="zTQ-7F-r4b" firstAttribute="top" secondItem="q3D-6Q-KpW" secondAttribute="top" id="e8s-Gm-XaA"/>
+                            <constraint firstItem="q3D-6Q-KpW" firstAttribute="trailing" secondItem="zTQ-7F-r4b" secondAttribute="trailing" constant="20" id="yCr-Ce-5VO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q3D-6Q-KpW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kFJ-o5-elp"/>
+                    <connections>
+                        <outlet property="productsTableView" destination="zTQ-7F-r4b" id="idV-5b-FwB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKW-wh-Gtl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1975" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XPg-94-tda">
