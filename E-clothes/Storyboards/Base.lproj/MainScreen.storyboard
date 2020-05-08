@@ -71,7 +71,7 @@
                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                 </collectionViewFlowLayout>
             </objects>
-            <point key="canvasLocation" x="1071.2" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1058" y="139"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="ZO9-fN-xAf">
@@ -81,15 +81,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-bg" translatesAutoresizingMaskIntoConstraints="NO" id="QdI-nc-zpk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zTQ-7F-r4b">
                                 <rect key="frame" x="20" y="44" width="335" height="623"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="QdI-nc-zpk" firstAttribute="top" secondItem="9J9-qr-eTX" secondAttribute="top" id="6fc-5x-o1F"/>
                             <constraint firstAttribute="bottom" secondItem="zTQ-7F-r4b" secondAttribute="bottom" id="Frj-MK-9jF"/>
+                            <constraint firstAttribute="bottom" secondItem="QdI-nc-zpk" secondAttribute="bottom" id="ILy-3l-ZNQ"/>
+                            <constraint firstItem="QdI-nc-zpk" firstAttribute="leading" secondItem="q3D-6Q-KpW" secondAttribute="leading" id="Jmw-Hj-hTN"/>
                             <constraint firstItem="zTQ-7F-r4b" firstAttribute="leading" secondItem="q3D-6Q-KpW" secondAttribute="leading" constant="20" id="OqZ-gf-Axn"/>
+                            <constraint firstItem="QdI-nc-zpk" firstAttribute="trailing" secondItem="q3D-6Q-KpW" secondAttribute="trailing" id="SfN-Ql-wBU"/>
                             <constraint firstItem="zTQ-7F-r4b" firstAttribute="top" secondItem="q3D-6Q-KpW" secondAttribute="top" id="e8s-Gm-XaA"/>
                             <constraint firstItem="q3D-6Q-KpW" firstAttribute="trailing" secondItem="zTQ-7F-r4b" secondAttribute="trailing" constant="20" id="yCr-Ce-5VO"/>
                         </constraints>
@@ -115,7 +122,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2xL-SM-HNv"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Els-34-smx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jz9-EH-zYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
