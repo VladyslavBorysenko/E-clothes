@@ -27,10 +27,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let temp = Category(name: "Shirt", id: "sdfsd", pictureURL: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", isActive: true, timestamp: Timestamp())
-        let temp2 = Category(name: "Jeans", id: "sdfsds", pictureURL: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80", isActive: true, timestamp: Timestamp())
-        categories.append(temp)
-        categories.append(temp2)
+        fetchData()
         categoryCollectionView.dataSource = self
         categoryCollectionView.delegate = self
         categoryCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: Identifiers.categoryCell)
@@ -56,6 +53,27 @@ class MainViewController: UIViewController {
         loginViewController.modalPresentationStyle = .fullScreen
         present(loginViewController, animated: true, completion: nil)
         
+    }
+    
+   private func fetchData() {
+        let data = Firestore.firestore().collection("categories")
+        
+        data.getDocuments{(querySnap, error) in
+            if let error = error{
+                debugPrint("Error occured \(error)")
+            }else{
+                for document in querySnap!.documents {
+                    let name = document["name"] as? String ?? ""
+                    let id = document["id"] as? String ?? ""
+                    let pictureURL = document["pictureURL"] as? String ?? ""
+                    let isActive = document["isActive"] as? Bool ?? true
+                    let timestamp = document["timestamp"] as? Timestamp ?? Timestamp()
+                    
+                    self.categories.append(Category(name: name, id: id, pictureURL: pictureURL, isActive: isActive, timestamp: timestamp))
+                    self.categoryCollectionView.reloadData()
+                 }
+            }
+        }
     }
     
     //MARK: - IBActions

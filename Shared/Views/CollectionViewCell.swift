@@ -27,6 +27,7 @@ class CollectionViewCell: UICollectionViewCell {
         categoryLabel.text = category.name
         
         if let url = URL(string: category.pictureURL){
+            categoryImage.kf.indicatorType = .activity
             categoryImage.kf.setImage(with: url)
         }
     }
