@@ -16,6 +16,7 @@ class ProductViewController: UIViewController {
     
     //MARK: - Properties
     var products = [Product]()
+    var category: Category!
     
     //MARK: - ViewController lifecycle
     override func viewDidLoad() {

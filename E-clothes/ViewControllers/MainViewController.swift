@@ -21,6 +21,8 @@ class MainViewController: UIViewController {
     //MARK: Variables
     var categories: [Category] = []
     
+    var selectedCategory: Category!
+    
     // MARK: -  ViewControllerLifeCycle
     
     override func viewDidLoad() {
@@ -92,5 +94,17 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let cellHeight = cellWidth * 1.5
         
         return CGSize(width: cellWidth, height: cellHeight)
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedCategory = categories[indexPath.item]
+        performSegue(withIdentifier: Identifiers.toProductsSegue, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Identifiers.toProductsSegue {
+            if let productVC = segue.destination as? ProductViewController{
+                productVC.category = selectedCategory
+            }
+        }
     }
 }
