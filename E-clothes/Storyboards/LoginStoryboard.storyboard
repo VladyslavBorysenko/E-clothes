@@ -49,6 +49,9 @@
                                         <state key="normal" title="Forgot password">
                                             <color key="titleColor" red="0.85882352939999995" green="0.1215686275" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgotPasswordButtonPressed:" destination="fFl-rN-KC8" eventType="touchUpInside" id="ydc-rq-iOa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjh-Ev-4qv" customClass="RoundedButton" customModule="E_clothes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="193" width="335" height="40"/>
@@ -75,8 +78,7 @@
                                             <color key="titleColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="createNewUserButtonPressed:" destination="fFl-rN-KC8" eventType="touchUpInside" id="EaI-gB-DzI"/>
-                                            <segue destination="OC8-yp-VDQ" kind="show" id="GKg-jT-vOD"/>
+                                            <segue destination="OC8-yp-VDQ" kind="show" id="wmW-KY-Toz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaF-0j-6gU" customClass="RoundedButton" customModule="E_clothes" customModuleProvider="target">
@@ -89,13 +91,16 @@
                                         <state key="normal" title="Continue as guest">
                                             <color key="titleColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="continueAsGuestButtonPressed:" destination="fFl-rN-KC8" eventType="touchUpInside" id="J37-oT-Wff"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="r6N-ER-0Qg">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="r6N-ER-0Qg">
                                 <rect key="frame" x="169" y="208" width="37" height="37"/>
                                 <color key="tintColor" red="0.1176470588" green="0.10980392160000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="color" red="0.1176470588" green="0.10980392160000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -191,7 +196,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="jgs-BH-obp">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="jgs-BH-obp">
                                 <rect key="frame" x="169" y="385" width="37" height="37"/>
                                 <color key="color" red="0.1176470588" green="0.10980392160000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>

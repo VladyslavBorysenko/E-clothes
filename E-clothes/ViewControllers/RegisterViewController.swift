@@ -56,22 +56,21 @@ class RegisterViewController: UIViewController {
     
 //MARK: - IBActions
     @IBAction func RegisterButtonPressed(_ sender: UIButton) {
-        
+        activityIndicator.startAnimating()
         guard let email = emailTextField.text, email.isNotEmpty else {return}
         guard let password = passwordTextField.text, password.isNotEmpty, let confirmPassword = confirmPasswordTextField.text, confirmPassword.isNotEmpty else {return}
         guard let username = usernameTextField.text, username.isNotEmpty else {return}
         
-        activityIndicator.startAnimating()
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             
             if let error = error{
                 debugPrint(error)
                 return
+            } else {
+                self.dismiss(animated: true, completion: nil)
             }
-            print("Registered")
-        
+            self.activityIndicator.stopAnimating()
         }
-        activityIndicator.stopAnimating()
 
     }
 }

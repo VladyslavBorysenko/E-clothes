@@ -10,7 +10,7 @@ import UIKit
 
 struct StoryboardName {
     static let loginStoryboard = "LoginStoryboard"
-    static let mainStoryboard = "Main"
+    static let mainStoryboard = "MainScreen"
 }
 
 struct StoryboardID {
@@ -23,4 +23,8 @@ struct AppImage {
     static let redCheckMark = "red_check"
     static let greenCheckMark = "green_check"
     static let loginScreenBackground = "bg1"
+}
+
+struct Identifiers{
+    static let categoryCell = "CategoryCell"
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
@@ -27,10 +28,30 @@ class LoginViewController: UIViewController {
 
     //MARK: - IBActions
     @IBAction func logInButtonPressed(_ sender: UIButton) {
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+        guard let email = emailTextField.text, email.isNotEmpty else {return}
+        guard let password = passwordTextField.text, password.isNotEmpty else {return}
+        
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            
+            if let error = error{
+                debugPrint(error)
+            }
+            else {
+                self.dismiss(animated: true, completion: nil)
+            }
+            self.activityIndicator.stopAnimating()
+        }
     }
     
-    @IBAction func createNewUserButtonPressed(_ sender: UIButton) {
+    @IBAction func continueAsGuestButtonPressed(_ sender: UIButton) {
+        
     }
+    @IBAction func forgotPasswordButtonPressed(_ sender: UIButton) {
+        
+    }
+    
     
     
     
