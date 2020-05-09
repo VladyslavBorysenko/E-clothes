@@ -16,22 +16,38 @@ class ProductViewController: UIViewController {
     
     //MARK: - Properties
     var products = [Product]()
-    var category: Category!
+    var category: Category?
     
     //MARK: - ViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let temp = Product(name: "Regular Fit Cotton Shirt", id: "sdfsdf", productDescription: "Short-sleeved shirt in woven cotton fabric with a turn-down collar. Classic button placket, yoke at back, and a chest pocket. Rounded hem. Regular Fit – classic fit with good room for movement and gently shaped waist for a comfortable, tailored silhouette", price: 1400.0, stock: 100, imageURL: "https://images.unsplash.com/photo-1555363947-34f8ceb62946?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", timestamp: Timestamp(), category: "Shirt")
-        
-        products.append(temp)
-        
+        setupTableView()
+    }
+
+
+//MARK: - Functions
+
+private func fetchProducts(){
+    let data = Firestore.firestore().collection("products").whereField("category", isEqualTo: category?.id)
+    data.getDocuments { (querySnap, error) in
+            guard let response = querySnap else {return}
+            for item in response.documents{
+                let oneProduct = Product(data: item.data())
+                self.products.append(oneProduct)
+                self.productsTableView.reloadData()
+            }
+        }
+    }
+    private func setupTableView(){
+        fetchProducts()
         productsTableView.delegate = self
         productsTableView.dataSource = self
         productsTableView.register(UINib(nibName: "ProductTableViewCell", bundle: nil), forCellReuseIdentifier: Identifiers.productCell)
     }
+    
 }
 
+//MARK: - Extensions
 extension ProductViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

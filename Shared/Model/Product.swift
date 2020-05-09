@@ -18,4 +18,15 @@ struct Product {
     var imageURL: String
     var timestamp: Timestamp
     var category: String
+    
+    init(data: [String: Any]) {
+        self.name = data["name"] as? String ?? ""
+        self.id = data["id"] as? String ?? ""
+        self.productDescription = data["productDescription"] as? String ?? ""
+        self.price = data["price"] as? Double ?? 0
+        self.stock = data["stock"] as? Int ?? 0
+        self.imageURL = data["imageURL"] as? String ?? ""
+        self.timestamp = data["timestamp"] as? Timestamp ?? Timestamp()
+        self.category = data["category"] as? String ?? ""
+    }
 }

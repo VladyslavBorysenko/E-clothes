@@ -27,10 +27,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData()
-        categoryCollectionView.dataSource = self
-        categoryCollectionView.delegate = self
-        categoryCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: Identifiers.categoryCell)
+        setupCollectionView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -41,8 +38,6 @@ class MainViewController: UIViewController {
         } else {
             authButton.title = "Logout"
         }
-        
-        
     }
     
 
@@ -52,11 +47,17 @@ class MainViewController: UIViewController {
         let loginViewController = launchStoryboard.instantiateViewController(withIdentifier: StoryboardID.loginNavigationID)
         loginViewController.modalPresentationStyle = .fullScreen
         present(loginViewController, animated: true, completion: nil)
-        
+    }
+    
+    private func setupCollectionView(){
+        fetchData()
+        categoryCollectionView.dataSource = self
+        categoryCollectionView.delegate = self
+        categoryCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: Identifiers.categoryCell)
     }
     
    private func fetchData() {
-        let data = Firestore.firestore().collection("categories")
+    let data = Firestore.firestore().collection("categories").whereField("isActive", isEqualTo: true).order(by: "timestamp", descending: true)
         
         data.getDocuments{(querySnap, error) in
             if let error = error{
