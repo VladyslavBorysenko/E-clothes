@@ -15,4 +15,12 @@ struct Category{
     var pictureURL: String
     var isActive: Bool = true
     var timestamp: Timestamp
+    
+    init(document: [String: Any]) {
+        self.name = document["name"] as? String ?? ""
+        self.id = document["id"] as? String ?? ""
+        self.pictureURL = document["pictureURL"] as? String ?? ""
+        self.isActive = document["isActive"] as? Bool ?? true
+        self.timestamp = document["timestamp"] as? Timestamp ?? Timestamp()
+    }
 }

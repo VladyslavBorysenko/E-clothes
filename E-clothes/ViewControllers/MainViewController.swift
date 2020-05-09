@@ -63,13 +63,8 @@ class MainViewController: UIViewController {
                 debugPrint("Error occured \(error)")
             }else{
                 for document in querySnap!.documents {
-                    let name = document["name"] as? String ?? ""
-                    let id = document["id"] as? String ?? ""
-                    let pictureURL = document["pictureURL"] as? String ?? ""
-                    let isActive = document["isActive"] as? Bool ?? true
-                    let timestamp = document["timestamp"] as? Timestamp ?? Timestamp()
-                    
-                    self.categories.append(Category(name: name, id: id, pictureURL: pictureURL, isActive: isActive, timestamp: timestamp))
+                    let oneCategoty = Category(document: document.data())
+                    self.categories.append(oneCategoty)
                     self.categoryCollectionView.reloadData()
                  }
             }
