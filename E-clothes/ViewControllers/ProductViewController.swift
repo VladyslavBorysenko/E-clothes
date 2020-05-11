@@ -28,7 +28,7 @@ class ProductViewController: UIViewController {
 //MARK: - Functions
 
 private func fetchProducts(){
-    let data = Firestore.firestore().collection("products").whereField("category", isEqualTo: category?.id)
+    let data = Firestore.firestore().collection("products").whereField("category", isEqualTo: category?.id).order(by: "timestamp", descending: true)
     data.getDocuments { (querySnap, error) in
             guard let response = querySnap else {return}
             for item in response.documents{
@@ -61,6 +61,17 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource{
         }
         return UITableViewCell()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedProduct = products[indexPath.item]
+        let productDetailVC =  ProductDetailViewController()
+        
+        productDetailVC.selectedProduct = selectedProduct
+        
+        present(productDetailVC, animated: true, completion: nil)
+        
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 180.0
     }
