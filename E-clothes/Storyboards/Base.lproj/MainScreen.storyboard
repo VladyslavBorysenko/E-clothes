@@ -59,6 +59,9 @@
                         <rightBarButtonItems>
                             <barButtonItem image="bar_button_cart" id="DTt-mL-TfG">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="Ax6-3a-URP" kind="show" id="9QI-kd-1cV"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem image="bar_button_star" id="mOw-hO-lRb">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,6 +84,130 @@
                 </collectionViewFlowLayout>
             </objects>
             <point key="canvasLocation" x="1058" y="139"/>
+        </scene>
+        <!--Checkout View Controller-->
+        <scene sceneID="seX-On-ExR">
+            <objects>
+                <viewController id="Ax6-3a-URP" customClass="CheckoutViewController" customModule="E_clothes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s7n-Zf-Ajv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXl-9d-FpL" customClass="RoundedButton" customModule="E_clothes" customModuleProvider="target">
+                                <rect key="frame" x="20" y="587" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.10980392160000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="brx-2N-lUu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <state key="normal" title="Checkout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkoutButtonPressed:" destination="Ax6-3a-URP" eventType="touchUpInside" id="YQs-r8-Eco"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="kUl-b2-VOw">
+                                <rect key="frame" x="20" y="445" width="335" height="112"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPm-Zx-WzS">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="1"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.10980392160000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="O35-xo-23L"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="116" translatesAutoresizingMaskIntoConstraints="NO" id="ie3-1a-bHl">
+                                        <rect key="frame" x="0.0" y="12" width="335" height="22"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Order Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tww-zk-omL">
+                                                <rect key="frame" x="0.0" y="0.0" width="189.5" height="22"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ --" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnW-ty-iS4">
+                                                <rect key="frame" x="305.5" y="0.0" width="29.5" height="22"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="141" translatesAutoresizingMaskIntoConstraints="NO" id="Gsd-aa-WRD">
+                                        <rect key="frame" x="0.0" y="45" width="335" height="22"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Shipping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrQ-aF-2Yb">
+                                                <rect key="frame" x="0.0" y="0.0" width="164.5" height="22"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ --" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0F-rX-l0b">
+                                                <rect key="frame" x="305.5" y="0.0" width="29.5" height="22"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJa-jb-tPt">
+                                        <rect key="frame" x="0.0" y="78" width="335" height="1"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.10980392160000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="SUG-EW-gQs"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="168" translatesAutoresizingMaskIntoConstraints="NO" id="vIA-G0-biT">
+                                        <rect key="frame" x="0.0" y="90" width="335" height="22"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWk-LL-vxi">
+                                                <rect key="frame" x="0.0" y="0.0" width="137.5" height="22"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ --" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zG7-XI-K7g">
+                                                <rect key="frame" x="305.5" y="0.0" width="29.5" height="22"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f0p-sC-sKH">
+                                <rect key="frame" x="20" y="64" width="335" height="361"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6O5-WR-My3" firstAttribute="trailing" secondItem="f0p-sC-sKH" secondAttribute="trailing" constant="20" id="2gW-7g-SqH"/>
+                            <constraint firstItem="kUl-b2-VOw" firstAttribute="top" secondItem="f0p-sC-sKH" secondAttribute="bottom" constant="20" id="8Nf-sD-Kn4"/>
+                            <constraint firstItem="6O5-WR-My3" firstAttribute="bottom" secondItem="IXl-9d-FpL" secondAttribute="bottom" constant="40" id="BTD-qA-pzj"/>
+                            <constraint firstItem="IXl-9d-FpL" firstAttribute="leading" secondItem="6O5-WR-My3" secondAttribute="leading" constant="20" id="CeR-YP-fsY"/>
+                            <constraint firstItem="IXl-9d-FpL" firstAttribute="top" secondItem="kUl-b2-VOw" secondAttribute="bottom" constant="30" id="H5W-kb-590"/>
+                            <constraint firstItem="kUl-b2-VOw" firstAttribute="leading" secondItem="6O5-WR-My3" secondAttribute="leading" constant="20" id="KRb-i9-ZHm"/>
+                            <constraint firstItem="f0p-sC-sKH" firstAttribute="top" secondItem="6O5-WR-My3" secondAttribute="top" constant="20" id="SMi-FW-bki"/>
+                            <constraint firstItem="6O5-WR-My3" firstAttribute="trailing" secondItem="kUl-b2-VOw" secondAttribute="trailing" constant="20" id="cpR-bu-UVx"/>
+                            <constraint firstItem="6O5-WR-My3" firstAttribute="trailing" secondItem="IXl-9d-FpL" secondAttribute="trailing" constant="20" id="dOg-ca-jD8"/>
+                            <constraint firstItem="f0p-sC-sKH" firstAttribute="leading" secondItem="6O5-WR-My3" secondAttribute="leading" constant="20" id="nM3-Pp-BFF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6O5-WR-My3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CyH-aA-ssr"/>
+                    <connections>
+                        <outlet property="orderValueLabel" destination="OnW-ty-iS4" id="C6a-FE-Rh2"/>
+                        <outlet property="orderedProductsList" destination="f0p-sC-sKH" id="2u3-zz-1mj"/>
+                        <outlet property="shippingLabel" destination="v0F-rX-l0b" id="51o-HL-qT3"/>
+                        <outlet property="totalOrderValueLabel" destination="zG7-XI-K7g" id="2wU-qL-Rvn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHv-lW-5KF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504.8" y="983.65817091454278"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="ZO9-fN-xAf">
@@ -111,7 +238,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q3D-6Q-KpW"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kFJ-o5-elp"/>
+                    <navigationItem key="navigationItem" id="kFJ-o5-elp">
+                        <barButtonItem key="rightBarButtonItem" image="bar_button_cart" id="Hgk-SW-4F5">
+                            <connections>
+                                <segue destination="Ax6-3a-URP" kind="show" id="jne-eI-FTd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="productsTableView" destination="zTQ-7F-r4b" id="idV-5b-FwB"/>
                     </connections>
@@ -150,6 +283,9 @@
             <point key="canvasLocation" x="132" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jne-eI-FTd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="bar_button_cart" width="27" height="24"/>
         <image name="bar_button_star" width="26" height="26"/>
