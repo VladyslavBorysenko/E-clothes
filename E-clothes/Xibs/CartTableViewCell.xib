@@ -9,64 +9,88 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="CartTableViewCell" customModule="E_clothes" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="381" height="75"/>
+        <tableViewCell contentMode="scaleAspectFill" restorationIdentifier="cartCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartCell" rowHeight="80" id="KGk-i7-Jjw" customClass="CartTableViewCell" customModule="E_clothes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="CartTableViewCell" customModule="E_clothes" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="381" height="75"/>
+                <rect key="frame" x="0.0" y="0.0" width="329" height="80"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category" translatesAutoresizingMaskIntoConstraints="NO" id="IFs-tv-cOi" customClass="RoundedImageView" customModule="E_clothes" customModuleProvider="target">
-                        <rect key="frame" x="9" y="9" width="57" height="57"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="IFs-tv-cOi" secondAttribute="height" multiplier="1:1" id="cd1-g6-CLR"/>
-                        </constraints>
-                    </imageView>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="RbP-cH-abl">
-                        <rect key="frame" x="79" y="27.5" width="147" height="20.5"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucf-y6-Kd7" customClass="RoundedView">
+                        <rect key="frame" x="8" y="8" width="313" height="66"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vaD-K6-4cm">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="20.5"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ --" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygl-13-hKS">
-                                <rect key="frame" x="119" y="0.0" width="28" height="20.5"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cat3" translatesAutoresizingMaskIntoConstraints="NO" id="3PB-xO-3fI">
+                                <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3PB-xO-3fI" secondAttribute="height" multiplier="51:51" id="5Er-lT-H4k"/>
+                                    <constraint firstAttribute="width" constant="50" id="Ug2-Kg-Bhh"/>
+                                    <constraint firstAttribute="height" constant="50" id="YK7-yZ-AJs"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="efD-ez-8B7">
+                                <rect key="frame" x="70" y="23" width="143" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Yr-Do-xtf">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="9nC-1n-ts0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ --" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBD-oM-fcl">
+                                        <rect key="frame" x="115" y="0.0" width="28" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl0-B9-nZw">
+                                <rect key="frame" x="277" y="18" width="28" height="30"/>
+                                <state key="normal" image="red_trash">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteFromCartButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="67L-YF-BkE"/>
+                                </connections>
+                            </button>
                         </subviews>
-                    </stackView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUs-YQ-Bua">
-                        <rect key="frame" x="338" y="22.5" width="28" height="30"/>
-                        <state key="normal" image="red_trash"/>
-                        <connections>
-                            <action selector="deleteFromCartButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Y2Z-cO-fCn"/>
-                        </connections>
-                    </button>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3PB-xO-3fI" secondAttribute="bottom" constant="8" id="79z-2l-SKy"/>
+                            <constraint firstAttribute="bottom" secondItem="cl0-B9-nZw" secondAttribute="bottom" constant="18" id="CSZ-Ua-ErH"/>
+                            <constraint firstItem="efD-ez-8B7" firstAttribute="leading" secondItem="3PB-xO-3fI" secondAttribute="trailing" constant="12" id="G0w-wB-gdk"/>
+                            <constraint firstItem="efD-ez-8B7" firstAttribute="centerY" secondItem="ucf-y6-Kd7" secondAttribute="centerY" id="GfM-0g-ILH"/>
+                            <constraint firstItem="3PB-xO-3fI" firstAttribute="leading" secondItem="ucf-y6-Kd7" secondAttribute="leading" constant="8" id="KcG-md-uJr"/>
+                            <constraint firstItem="3PB-xO-3fI" firstAttribute="top" secondItem="ucf-y6-Kd7" secondAttribute="top" constant="8" id="Ncd-Kd-deQ"/>
+                            <constraint firstItem="cl0-B9-nZw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="efD-ez-8B7" secondAttribute="trailing" constant="12" id="PLB-Ug-dWj"/>
+                            <constraint firstItem="cl0-B9-nZw" firstAttribute="top" secondItem="ucf-y6-Kd7" secondAttribute="top" constant="18" id="XmU-wt-UV4"/>
+                            <constraint firstAttribute="trailing" secondItem="cl0-B9-nZw" secondAttribute="trailing" constant="8" id="obU-wy-0rG"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="RbP-cH-abl" firstAttribute="leading" secondItem="IFs-tv-cOi" secondAttribute="trailing" constant="13" id="DjV-D6-3uz"/>
-                    <constraint firstAttribute="bottom" secondItem="IFs-tv-cOi" secondAttribute="bottom" constant="9" id="Xi3-kh-EOm"/>
-                    <constraint firstItem="IFs-tv-cOi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="XyA-Y3-15g"/>
-                    <constraint firstItem="IFs-tv-cOi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="ZhP-ej-Ly2"/>
-                    <constraint firstAttribute="trailing" secondItem="GUs-YQ-Bua" secondAttribute="trailing" constant="15" id="ecO-Wx-fTK"/>
-                    <constraint firstItem="RbP-cH-abl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fCB-cl-IJL"/>
-                    <constraint firstItem="GUs-YQ-Bua" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tvK-70-uYG"/>
+                    <constraint firstItem="ucf-y6-Kd7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="82N-tR-ZOk"/>
+                    <constraint firstAttribute="trailing" secondItem="ucf-y6-Kd7" secondAttribute="trailing" constant="8" id="LwS-AE-DLf"/>
+                    <constraint firstAttribute="bottom" secondItem="ucf-y6-Kd7" secondAttribute="bottom" constant="6" id="RHP-c8-cBY"/>
+                    <constraint firstItem="ucf-y6-Kd7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Tcs-Yd-uGX"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="productImageView" destination="IFs-tv-cOi" id="xmU-Ya-dCa"/>
-                <outlet property="productPriceLabel" destination="Ygl-13-hKS" id="S03-bh-VUe"/>
+                <outlet property="deleteButton" destination="cl0-B9-nZw" id="MYo-Ch-GA0"/>
+                <outlet property="productImageView" destination="3PB-xO-3fI" id="2U6-O9-5dn"/>
+                <outlet property="productNameLabel" destination="0Yr-Do-xtf" id="bhC-y5-QNt"/>
+                <outlet property="productPriceLabel" destination="gBD-oM-fcl" id="eI8-11-jZH"/>
+                <outlet property="testView" destination="ucf-y6-Kd7" id="y6S-t4-HGO"/>
             </connections>
-            <point key="canvasLocation" x="39.855072463768117" y="-46.540178571428569"/>
+            <point key="canvasLocation" x="-68.840579710144937" y="-77.008928571428569"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="category" width="640" height="1138"/>
+        <image name="bg_cat3" width="1500" height="1875"/>
         <image name="red_trash" width="28" height="30"/>
     </resources>
 </document>

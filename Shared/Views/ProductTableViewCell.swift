@@ -9,6 +9,10 @@
 import UIKit
 import Kingfisher
 
+protocol ProductCellDelegate: class {
+    func addToCart(item: Product)
+}
+
 class ProductTableViewCell: UITableViewCell {
 
     //MARK: - IBOutlets
@@ -17,6 +21,9 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var productPriceTextField: UILabel!
     @IBOutlet weak var addToFavButton: UIButton!
     
+    //MARK: - Properties
+    weak var delegate: ProductCellDelegate?
+    private var product: Product!
     
     //MARK: - Cell Lifecycle
     override func awakeFromNib() {
@@ -25,7 +32,11 @@ class ProductTableViewCell: UITableViewCell {
     }
 
     //MARK: - Functions
-    func configureCell(product: Product){
+    func configureCell(product: Product, delegate: ProductCellDelegate){
+        
+        self.product = product
+        self.delegate = delegate
+        
         if let url = URL(string: product.imageURL){
             productImage.kf.setImage(with: url)
         }
@@ -33,8 +44,9 @@ class ProductTableViewCell: UITableViewCell {
         productPriceTextField.text = String(product.price)
     }
     
-    //MARK: -IBActions
+    //MARK: -  IBActions
     @IBAction func addToCartButtonPressed(_ sender: RoundedButton) {
+        delegate?.addToCart(item: product)
     }
     @IBAction func addToFavButtonPressed(_ sender: Any) {
     }

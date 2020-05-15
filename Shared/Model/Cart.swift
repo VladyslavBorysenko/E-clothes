@@ -13,7 +13,7 @@ final class Cart{
     static let shared = Cart()
     
     //MARK:- Properties
-    var cartItems: [Product]!
+    var cartItems: [Product] = []
     private let fixedShippingPrice: Double = 300
     
     var subtotal: Double{
@@ -25,7 +25,9 @@ final class Cart{
     }
     
     var shippingFee: Double{
-        return subtotal > 2000 ? 0 : fixedShippingPrice
+        if subtotal > 2000 || subtotal == 0 {
+            return 0
+        } else { return fixedShippingPrice}
     }
     
     var total: Double{

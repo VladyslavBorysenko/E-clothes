@@ -11,8 +11,13 @@ import UIKit
 class CartTableViewCell: UITableViewCell {
 
     //MARK: - IBoutlets
-    @IBOutlet weak var productImageView: RoundedImageView!
+    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
+    
+    @IBOutlet weak var deleteButton: UIButton!
+    @IBOutlet weak var testView: RoundedView!
+    
     
     
     //MARK: - Cell Life Cycle
@@ -21,14 +26,26 @@ class CartTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    //MARK: - Functions
+    func setupProductCell(item: Product){
+        productNameLabel.text = item.name
+        
+        let priceFormatter = NumberFormatter()
+        priceFormatter.numberStyle = .currency
+        if let price = priceFormatter.string(from: item.price as NSNumber){
+          productPriceLabel.text = price
+        }
+        
+        if let url = URL(string: item.imageURL){
+           productImageView.kf.setImage(with: url)
+        }
+        print(testView.frame.width)
     }
+    
     
     //MARK: - IBActions
     @IBAction func deleteFromCartButtonPressed(_ sender: UIButton) {
+        //Cart.shared.removeFromCart(itemIndex: <#T##Int#>)
     }
     
 }

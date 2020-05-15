@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="454" height="166"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lws-Pd-guP">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lws-Pd-guP" customClass="RoundedView">
                         <rect key="frame" x="8" y="8" width="438" height="150"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category" translatesAutoresizingMaskIntoConstraints="NO" id="dFt-bq-TAM" customClass="RoundedImageView" customModule="E_clothes" customModuleProvider="target">

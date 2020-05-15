@@ -50,6 +50,7 @@ class ProductDetailViewController: UIViewController {
 //MARK: - IBActions
     
     @IBAction func addToCartButtonPressed(_ sender: RoundedButton) {
+        Cart.shared.addToCart(item: selectedProduct)
         dismiss(animated: true, completion: nil)
     }
     @IBAction func continueShoppingButtonPressed(_ sender: RoundedButton) {

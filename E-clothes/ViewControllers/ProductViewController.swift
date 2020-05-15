@@ -9,7 +9,8 @@
 import UIKit
 import Firebase
 
-class ProductViewController: UIViewController {
+class ProductViewController: UIViewController, ProductCellDelegate {
+    
 
     //MARK: - IBOutlets
     @IBOutlet weak var productsTableView: UITableView!
@@ -44,6 +45,9 @@ private func fetchProducts(){
         productsTableView.dataSource = self
         productsTableView.register(UINib(nibName: "ProductTableViewCell", bundle: nil), forCellReuseIdentifier: Identifiers.productCell)
     }
+    func addToCart(item: Product) {
+        Cart.shared.addToCart(item: item)
+     }
     
 }
 
@@ -56,7 +60,7 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = productsTableView.dequeueReusableCell(withIdentifier: Identifiers.productCell, for: indexPath) as? ProductTableViewCell{
-            cell.configureCell(product: products[indexPath.item])
+            cell.configureCell(product: products[indexPath.item], delegate: self)
             return cell
         }
         return UITableViewCell()

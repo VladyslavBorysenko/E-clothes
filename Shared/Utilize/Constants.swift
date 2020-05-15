@@ -29,5 +29,6 @@ struct Identifiers{
     static let categoryCell = "CategoryCell"
     static let productCell = "ProductCell"
     static let toProductsSegue = "toProductController"
+    static let CartCell = "CartCell"
 }
 

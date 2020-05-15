@@ -202,8 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				861F6AA424670E0700E2755E /* ProductDetailViewController.xib */,
-				861F6AAA24696C6200E2755E /* CartTableViewCell.xib */,
 				861F6AA924696C6200E2755E /* CartTableViewCell.swift */,
+				861F6AAA24696C6200E2755E /* CartTableViewCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
